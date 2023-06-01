@@ -44,11 +44,12 @@ class Collector:
 
         dataset = MDPDataset(observations=obses, actions=actis,
                              rewards=rewas, terminals=terms, discrete_action=True)
-        print(len(dataset))
+        print('episode num:', len(dataset))
 
         cql = DiscreteCQL()
         cql.fit(
             dataset,
+            n_epochs=5,
             scorers={
                 'td_error': td_error_scorer,
             },
