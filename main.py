@@ -2,14 +2,12 @@ import torch
 import os
 import sys
 from sumo_env import Sumo_Env
-# from stable_baselines3 import A2C
-# from stable_baselines3 import PPO, SAC, TD3, DQN
+# from stable_baselines3 import PPO, SAC, TD3, DQN,A2C
 # from stable_baselines3.common.noise import NormalActionNoise, OrnsteinUhlenbeckActionNoise
 from heuristic import Heuristic
 from data import Collector
 
-
-torch.manual_seed(4396)
+# torch.manual_seed(4396)
 
 if 'SUMO_HOME' in os.environ:
     tools = os.path.join(os.environ['SUMO_HOME'], 'tools')
@@ -21,10 +19,11 @@ else:
 
 # env = Sumo_Env(sumo_config='./sumo-rl.sumocfg', GUI=True)
 env = Sumo_Env(sumo_config='./sumo-rl.sumocfg', GUI=False)
-# env.launch_env()
+env.launch_env()
 # env_checker.check_env(env)
 collector = Collector(env)
 collector.collect()
+
 
 # model = A2C("MlpPolicy", env, verbose=1)
 # model = Heuristic()

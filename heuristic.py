@@ -9,7 +9,7 @@ class Heuristic:
         super(Heuristic, self).__init__()
 
     def choose_action(self, state):
-        if state[5] >= state[6]:
+        if state[0] >= state[2]:
             actio = 0
         else:
             actio = 2

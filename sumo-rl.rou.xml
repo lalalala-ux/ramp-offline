@@ -2,18 +2,18 @@
     <vType id="type1" accel="2.6" decel="4.5" sigma="0" length="5" carFollowModel="Krauss" laneChangeModel="LC2013" tau="2.5"/>
     <vType id="type2" accel="2.6" decel="4.5" sigma="0" length="5" carFollowModel="Krauss" laneChangeModel="LC2013" tau="2.5"/>	
 		
-    <flow id="flow_1" color="1,1,0" from="E1" to="3" begin="0" end="1000000" probability="0.06" departSpeed="max" departPos="base" departLane="best" type="type2"/>
-    <flow id="flow_1_3" color="1,1,0" from="E0" to="3" begin="0" end="1000000" probability="0.06" departSpeed="max" departPos="base" departLane="best" type="type2"/>	
-	<flow id="flow_1_1" color="1,1,0" from="15" to="3" begin="0" end="1000000" probability="0.06" departSpeed="max" departPos="base" departLane="best" type="type2"/>
+    <flow id="flow_1" color="1,1,0" from="E1" to="3" begin="0" end="1000000" probability="0.09" departSpeed="max" departPos="base" departLane="best" type="type2"/>
+    <flow id="flow_1_3" color="1,1,0" from="E0" to="3" begin="0" end="1000000" probability="0.09" departSpeed="max" departPos="base" departLane="best" type="type2"/>	
+	<flow id="flow_1_1" color="1,1,0" from="15" to="3" begin="0" end="1000000" probability="0.09" departSpeed="max" departPos="base" departLane="best" type="type2"/>
 		
-    <flow id="flow_3" from="5f" to="3" begin="0" end="1000000" probability="0.01" departSpeed="max" departPos="base" departLane="best" type="type2"/>
+    <!--flow id="flow_3" from="5f" to="3" begin="0" end="1000000" probability="0.01" departSpeed="max" departPos="base" departLane="best" type="type2"-->
 	
-	<flow id="flow_4" color="1,0,0" from="7" to="3" begin="0" end="1000000" probability="0.1" departSpeed="max" departPos="base" departLane="best" type="type2"/>
+	<flow id="flow_4" color="1,0,0" from="7" to="3" begin="0" end="1000000" probability="0.14" departSpeed="max" departPos="base" departLane="best" type="type2"/>
 	
-	<flow id="flow_5" color="1,0,0" from="7" to="10" begin="0" end="100000" probability="0.4" departSpeed="max" departPos="base" departLane="best" type="type1"/>
+	<!--flow id="flow_5" color="1,0,0" from="7" to="10" begin="0" end="100000" probability="0.4" departSpeed="max" departPos="base" departLane="best" type="type1"-->
 	
 	<flow id="flow_6" from="2f" to="3" begin="0" end="1000000" probability="0.01" departSpeed="max" departPos="base" departLane="best" type="type2"/>	
 	
-	<flow id="flow_7" from="7" to="2" color="1,0,0" begin="0" end="1000000" probability="0.08" departSpeed="max" departPos="base" departLane="best" type="type2"/>	
+	<!--flow id="flow_7" from="7" to="2" color="1,0,0" begin="0" end="1000000" probability="0.08" departSpeed="max" departPos="base" departLane="best" type="type2"-->	
 
 </routes>

@@ -18,7 +18,7 @@ else:
     sys.exit("please declare environment variable 'SUMO_HOME'")
 
 
-env = Sumo_Env(sumo_config=r"F:\py39_project\sumo_project\signal_project\sumo-rl.sumocfg", GUI=True)
+env = Sumo_Env(sumo_config=r"F:\py39_project\sumo_project\offline\sumo-rl.sumocfg", GUI=False)
 
 
 
@@ -70,17 +70,17 @@ queue_length_list_l = []
 queue_length_list_r = []
 cumulative_queue_length_l = 0
 cumulative_queue_length_r = 0
-
-while i < 3600:
+total_left_list = []
+total_right_list = []
+while i < 3000:
     traci.simulationStep()
-    queue_length_left, queue_length_right = env.get_queue_length()
-    cumulative_queue_length_l += queue_length_left
-    cumulative_queue_length_r += queue_length_right
-    queue_length_list_l.append(cumulative_queue_length_l)
-    queue_length_list_r.append(cumulative_queue_length_r)
+
+
     i += 1
 
+
 traci.close()
+
 # queue_length_list_l= pd.DataFrame(queue_length_list_l)
 # queue_length_list_r= pd.DataFrame(queue_length_list_r)
 #
